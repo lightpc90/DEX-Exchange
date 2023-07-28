@@ -483,14 +483,14 @@ export default function Home() {
     <div>
       <Head>
         <title>Crypto Devs</title>
-        <meta name="description" content="Whitelist-Dapp" />
+        <meta name="description" content="Dex-Echange-Dapp" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Devs Exchange!</h1>
+          <h1 className={styles.title}>Welcome to 24Codelabz Dex Exchange!</h1>
           <div className={styles.description}>
-            Exchange Ethereum &#60;&#62; Crypto Dev Tokens
+            Exchange Ethereum &#60;&#62; 24Codelabz Token
           </div>
           <div>
             <button
@@ -513,12 +513,12 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src="./cryptodev.svg" />
+          <img className={styles.image} src="./_24codelabz.png" />
         </div>
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        With &#10084; by 24Codelabz
       </footer>
     </div>
   );
