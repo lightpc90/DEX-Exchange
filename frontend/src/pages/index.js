@@ -330,7 +330,7 @@ export default function Home() {
     // If wallet is not connected, return a button which allows them to connect their wllet
     if (!walletConnected) {
       return (
-        <button onClick={connectWallet} className={styles.button}>
+        <button onPress={connectWallet} className={styles.button}>
           Connect your wallet
         </button>
       );
@@ -376,7 +376,7 @@ export default function Home() {
                   }
                   className={styles.input}
                 />
-                <button className={styles.button1} onClick={_addLiquidity}>
+                <button className={styles.button1} onPress={_addLiquidity}>
                   Add
                 </button>
               </div>
@@ -403,7 +403,7 @@ export default function Home() {
                   {`You will need ${utils.formatEther(addCDTokens)} 24Codelabz
                   Tokens`}
                 </div>
-                <button className={styles.button1} onClick={_addLiquidity}>
+                <button className={styles.button1} onPress={_addLiquidity}>
                   Add
                 </button>
               </div>
@@ -424,7 +424,7 @@ export default function Home() {
                 {/* Convert the BigNumber to string using the formatEther function from ethers.js */}
                 {`You will get ${utils.formatEther(removeCD)} 24Codelabz Tokens and ${utils.formatEther(removeEther)} Eth`}
               </div>
-              <button className={styles.button1} onClick={_removeLiquidity}>
+              <button className={styles.button1} onPress={_removeLiquidity}>
                 Remove
               </button>
             </div>
@@ -470,7 +470,7 @@ export default function Home() {
                   tokenToBeReceivedAfterSwap
                 )} Eth`}
           </div>
-          <button className={styles.button1} onClick={_swapTokens}>
+          <button className={styles.button1} onPress={_swapTokens}>
             Swap
           </button>
         </div>
@@ -494,7 +494,7 @@ export default function Home() {
           <div>
             <button
               className={styles.button}
-              onClick={() => {
+              onPress={() => {
                 setLiquidityTab(true);
               }}
             >
@@ -502,7 +502,7 @@ export default function Home() {
             </button>
             <button
               className={styles.button}
-              onClick={() => {
+              onPress={() => {
                 setLiquidityTab(false);
               }}
             >
